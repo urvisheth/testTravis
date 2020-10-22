@@ -3,4 +3,4 @@ sudo: required
 language: ruby
 
 before_install:
-  - echo "Testing Docker Hub credentials"
+  - echo "Testing Docker Hub credentials $test"
