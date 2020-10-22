@@ -5,5 +5,7 @@ before_script:
 - yes | python setup.py install
 deploy:
   provider: s3
-  access_key_id: AKIAJ5VMZ4EVARLKDYXA 
-  secret_access_key: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
+  access_key_id: 
+	secure :${ACCESS_API_KEY}
+  secret_access_key:
+	secure :${ACCESS_SECERT_KEY}
