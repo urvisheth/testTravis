@@ -6,8 +6,8 @@ script:
 deploy:
   provider: s3
   access_key_id: 
-    secure :${ACCESS_API_KEY}
+    secure :${ACCESS_API_KEY_1}
   secret_access_key:
-    secure :${ACCESS_SECERT_KEY}
+    secure :${ACCESS_SECERT_KEY_1}
   bucket: urvishethtest11
 
