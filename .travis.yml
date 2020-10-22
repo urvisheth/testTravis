@@ -1,5 +1,9 @@
-sudo: required
-
-before_install:
-  - echo "Testing Docker Hub credentials"
-  - if [[ "$test" == "urvi"]]; then echo -e "Push Container to Docker Hub"; fi
+language: python
+python:
+- '3.6'
+before_script:
+- yes | python setup.py install
+deploy:
+  provider: s3
+  access_key_id: AKIAJ5VMZ4EVARLKDYXA 
+  secret_access_key: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
